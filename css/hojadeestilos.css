@@ -19,3 +19,8 @@
     .autoIframe{
         width: 100%;
     }
+
+    aside{
+        background: #41c5d3;
+        border-radius: 4px;
+    }
