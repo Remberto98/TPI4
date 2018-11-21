@@ -1,46 +1,89 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Etiquetas necesarias para bootstrap 4 -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta http-equiv="Expires" content="0">
-    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0" />
+    <meta http-equiv="Pragma" content="no-cache" />
+
+    <!-- Hoja de estilos -->
+    <link rel="stylesheet" href="css/hojadeestilos.css" />
     <title>videos</title>
-    
-    
   </head>
   <body>
     <!-- Header -->
+
     <header>
       <h1>Mi sitio web de videos</h1>
       <h2>¡El mejor!</h2>
     </header>
 
-    <!-- Aside -->
-    <aside>
-      <ul>
-        <li>Categoria 1</li>
-        <li>Categoria 2</li>
-        <li>Categoria 3</li>
-      </ul>
-    </aside>
-    <section>
-      <article>
-        <!--Video de youtube-->
-        <iframe
-          id="iframe-video-principal"
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/GdzrrWA8e7A"
-          frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-          
-        ></iframe>
-      </article>
-    </section>
+    <div class="container-fluid">
+      <div class="row">
+         <!--Columna de 8-->
+        <div class="col-md-2">
+          <!-- Aside -->
+          <aside>
+            <ul>
+              <li>Categoria 1</li>
+              <li>Categoria 2</li>
+              <li>Categoria 3</li>
+            </ul>
+          </aside>
+        </div>
+
+        <!--Columna de 8-->
+        <div class="col-md-8">
+          <section>
+            <article>
+              <!-- Video de youtube -->
+              <div class="autoIframe">
+                <iframe
+                id="iframe-video-principal"
+                src="https://www.youtube.com/embed/GdzrrWA8e7A"
+                height="450"
+                frameborder="0"
+                scrolling="no"
+                onload="resizeIframe(this)"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+              </div>
+            </article>
+            <h1>
+              Aqui información relacionada al video, botones para agregar a lista de reproduccion, descargar etc.
+            </h1>
+          </section>
+        </div>
+        
+        <!--Columna de 1-->
+        <div class="col-md-1">
+          <p>
+            Aqui se pondra una lista de reproducción de videos
+          </p>
+        </div>
+      </div>
+    </div>
+
     <!-- Lógica, script de JS -->
     <script src="logica/codigo.js"></script>
+
+    <!-- Scripts de bootstrap -->
+    <script src="js/jQuery.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/bootstrap.min.js"></script>
   </body>
 </html>

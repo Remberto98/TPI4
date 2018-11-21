@@ -1,0 +1,21 @@
+/*
+    Darle todos los colores aquí*/
+
+    /*
+    body{
+        background-color: black;
+    }*/
+
+    html, body {
+        height:100%;
+        width:100%;
+        margin:0;
+    }
+
+    .autoIframe iframe {
+        width:100%;
+    }
+
+    .autoIframe{
+        width: 100%;
+    }
