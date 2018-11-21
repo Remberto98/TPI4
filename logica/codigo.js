@@ -31,3 +31,24 @@ function resizeIframe(obj) {
 }
 
 
+//Flujo de ejecución
+
+/*
+
+var nombre = localStorage.getItem('name');
+var usuario = localStorage.getItem('usr');
+var PassWord = localStorage.getItem('pwd');
+var correo = localStorage.getItem('email');
+
+*/
+
+// guardar datos en la sesión actual
+
+/*
+sessionStorage.setItem("name", "Fernando Alvarado");
+sessionStorage.setItem("usr", "Fernando9825");
+sessionStorage.setItem("pwd", "pwd");
+sessionStorage.setItem("fer25alvarado@gmail.com", "email")
+*/
+
+console.log(sessionStorage.getItem('name'));
